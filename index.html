@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Daily Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      
+      <div id="head">
+        <h2>Daily Expense Tracker</h2>
+      </div>  
+
+      <div id="body">
+          <table>
+
+              <tr>
+                <th onclick="add(id)" id="Car Expense"><img src="Images/car.png" alt=""id="icon"></th>
+                <th onclick="add(id)" id="Home Expense"><img src="Images/home.png" alt="" id="icon"></th>
+                <th onclick="add(id)" id="Food Expense"><img src="Images/food.png" alt="" id="icon"></th>
+              </tr>
+              <tr>
+                <th onclick="add(id)" id="Health Expense"><img src="Images/thermometer.png" alt="" id="icon"></th>
+                <th id="balance">
+                  <div id="innerP">
+                  <p id="incomeShow">PKR: </p>
+                  <p id="expenseShow">PKR: </p>
+                  </div>
+                  </th>
+                <th onclick="add(id)" id="Transport Expense"><img src="Images/transport.png" alt="" id="icon"></th>
+              </tr>
+              <tr>
+                <th onclick="add(id)" id="Clothes Expense"><img src="Images/clothes.png" alt="" id="icon"></th>
+                <th onclick="add(id)" id="Communication Expense"><img src="Images/phone.png" alt="" id="icon"></th>
+                <th onclick="add(id)" id="Sports Expense"><img src="Images/sports.png" alt="" id="icon"></th>
+              </tr>
+
+          </table>
+
+          <div id="showBalance">Balance: </div>
+
+          <div id="imagesContainer">
+            <img src="Images/minus.png" alt="" class="entryImages" id="MinusIncome" onclick="add(id)">
+            <img src="Images/add.png" alt="" class="entryImages" id="Income" onclick="add(id)"></div>
+
+      </div>
+
+
+      <div id="addAmount" class="hidden">
+
+          <div id="date"></div>
+
+      <div id="amountShow">
+
+        
+
+        <div id="centerField">
+            
+            <p id="pkr">PKR</p>
+
+          
+        <input type="text" id="amountShowField" disabled>
+        
+        </div>
+      </div>
+
+      <div id="number">
+
+          <table id="numberTable">
+            <tr>
+              <th id="1" onclick="addNumber(id)">1</th>
+              <th id="2" onclick="addNumber(id)">2</th>
+              <th id="3" onclick="addNumber(id)">3</th>
+            </tr>
+            <tr>
+              <th id="4" onclick="addNumber(id)">4</th>
+              <th id="5" onclick="addNumber(id)">5</th>
+              <th id="6" onclick="addNumber(id)">6</th>
+            </tr>
+            <tr>
+              <th id="7" onclick="addNumber(id)">7</th>
+              <th id="8" onclick="addNumber(id)">8</th>
+              <th id="9" onclick="addNumber(id)">9</th>
+            </tr>
+            <tr>
+              <th onclick="back()"><img src="Images/back.png" alt="" id="funcIcon"></th>
+              <th id="0" onclick="addNumber(id)">0</th>
+              <th onclick="refreshField()"><img src="Images/refresh.png" alt="" id="funcIcon"></th>
+            </tr>
+          </table>
+
+          <button id="button" onclick="getData()"></button>
+
+      </div>
+
+    </div>
+      
+      
+      
+    </div>
+  
+    
+    
+    <script src="app.js"></script>
+  </body>
+
+</html>
